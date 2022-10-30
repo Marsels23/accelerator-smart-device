@@ -1,0 +1,143 @@
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  @include vp-1023 {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  h3 {
+    color: $color-deep-sky-blue;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0 0 10px;
+
+    @include vp-1023 {
+      margin: 0 0 8px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0 0 14px;
+    }
+  }
+
+  p {
+    color: $color-black-peral-3;
+    font-family: "PT Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+  }
+
+  svg {
+    margin-bottom: 15px;
+    width: 35px;
+    height: 35px;
+
+    @include vp-767 {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 19px;
+    }
+  }
+
+  path {
+    fill: $color-deep-sky-blue;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid $color-whisper;
+  padding: 40px 35px 15px 45px;
+  max-width: calc(50% - 15px);
+  position: relative;
+  min-height: 300px;
+  transition: all 0.5s ease-in;
+
+  @include vp-1023 {
+    min-height: 360px;
+
+    &--small {
+      svg {
+        margin-bottom: 11px;
+      }
+
+      h3 {
+        line-height: 33px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    padding: 30px 30px;
+    min-height: 340px;
+
+    &--small {
+      min-height: 325px;
+
+      svg {
+        margin-bottom: 23px;
+      }
+
+      h3 {
+        line-height: 25px;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:hover h3 {
+    color: $color-alice-blue;
+  }
+
+  &:hover p {
+    color: $color-alice-blue;
+  }
+
+  &:hover path {
+    fill: $color-alice-blue;
+  }
+}
