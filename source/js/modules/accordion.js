@@ -1,7 +1,7 @@
-let accordions = document.querySelectorAll('[data-accordion]');
+let verticalMenu = document.querySelectorAll('[data-accordion]');
 
-accordions.forEach((accordion) => {
-  accordions.forEach((ac) => {
+verticalMenu.forEach((accordion) => {
+  verticalMenu.forEach((ac) => {
     ac.closest('.footer__section').classList.remove('footer__section--open');
   });
 
@@ -9,7 +9,7 @@ accordions.forEach((accordion) => {
     if (accordion.closest('.footer__section').classList.contains('footer__section--open')) {
       accordion.closest('.footer__section').classList.remove('footer__section--open');
     } else {
-      accordions.forEach((ac) => {
+      verticalMenu.forEach((ac) => {
         ac.closest('.footer__section').classList.remove('footer__section--open');
       });
       accordion.closest('.footer__section').classList.add('footer__section--open');

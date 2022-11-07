@@ -50,13 +50,13 @@
             <div class="banner__block">
               <h1>Печатные платы</h1>
               <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a href="#feedback" class="btn banner__btn" data-name-mobile="Бесплатная консультация" data-name-desktop="Получить бесплатную консультацию">Получить бесплатную консультацию</a>
+              <a href="#feedback" class="btn banner__btn" data-name-mobile="Бесплатная консультация" data-name-desktop="Получить бесплатную консультацию">бесплатная консультация</a>
             </div>
           </div>
         </section>
-        <section class="advantages">
+        <section class="advantages container">
           <h2 class="visually-hidden">Преимущества</h2>
-          <div class="container advantages__container">
+          <div class="advantages__container">
             <ul class="advantages__list">
               <li class="advantages__item">
                 <svg  width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,8 +105,8 @@
             </ul>
           </div>
         </section>
-        <section class="company">
-          <div class="container company__container">
+        <section class="company container">
+          <div class="company__container">
             <picture>
               <!-- 1x: 150px; 2x: 300px -->
               <source type="image/webp" srcset="./img/2022.webp 1x, ./img/2022@2x.webp 2x">
@@ -167,14 +167,17 @@
               <form action="https://echo.htmlacademy.ru" method="post" class="feedback__form form" data-form>
                 <div class="form__name-phone">
                   <div class="form__name">
+                    <label class="visually-hidden" for="name">Имя</label>
                     <input name="name" required type="text" data-input-name placeholder="Имя">
                     <span class="form__text-error"> Нужно заполнить поле</span>
                   </div>
                   <div class="form__phone">
+                    <label class="visually-hidden" for="phone">Телефон</label>
                     <input name="phone" required type="text" data-input-phone placeholder="Телефон">
                     <span class="form__text-error"> Нужно заполнить поле</span>
                   </div>
                 </div>
+                <label class="visually-hidden" for="question">Ваш вопрос</label>
                 <textarea name="question" cols="30" rows="10" data-input-textarea placeholder="Ваш запрос"></textarea>
                 <div class="form__send-block">
                   <div class="form__personal">
@@ -284,10 +287,12 @@
           <form action="https://echo.htmlacademy.ru" method="post" class="modal__form form form--modal" data-form>
             <div class="form__name-phone">
               <div class="form__name">
+                <label class="visually-hidden" for="name">Имя</label>
                 <input name="name" required type="text" data-input-name placeholder="Имя">
                 <span class="form__text-error"> Нужно заполнить поле</span>
               </div>
               <div class="form__phone">
+                <label class="visually-hidden" for="phone">Телефон</label>
                 <input name="phone" required type="text" data-input-phone placeholder="Телефон">
                 <span class="form__text-error"> Нужно заполнить поле правильно</span>
               </div>

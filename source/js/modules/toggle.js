@@ -1,14 +1,14 @@
 document.querySelectorAll('[data-toggle]').forEach((toggle) => {
-  let text = toggle.querySelector('[data-toggle-text]');
-  let btn = toggle.querySelector('[data-toggle-btn]');
+  let aboutText = toggle.querySelector('[data-toggle-text]');
+  let aboutButton = toggle.querySelector('[data-toggle-btn]');
 
 
-  btn.addEventListener('click', (event)=> {
+  aboutButton.addEventListener('click', (event)=> {
     event.preventDefault();
 
-    text.classList.toggle('company__texts--closed');
-    text.classList.toggle('company__texts--open');
+    aboutText.classList.toggle('company__texts--closed');
+    aboutText.classList.toggle('company__texts--open');
 
-    [btn.dataset.toggleText, btn.innerHTML] = [btn.innerHTML, btn.dataset.toggleText];
+    [aboutButton.dataset.toggleText, btn.innerHTML] = [btn.innerHTML, btn.dataset.toggleText];
   });
 });

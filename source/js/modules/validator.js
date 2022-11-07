@@ -1,6 +1,7 @@
 
 const forms = document.querySelectorAll('[data-form]');
 
+if(forms[0]) {
 forms.forEach((form) => {
   const name = form.querySelector('[data-input-name]');
   const phone = form.querySelector('[data-input-phone]');
@@ -46,6 +47,7 @@ forms.forEach((form) => {
     }
   });
 });
+}
 
 
 // Код взят с сайта и доработан https://newqos.com/zametki-yuzera/42-maska-vvoda-nomera-telefona-na-chistom-js
