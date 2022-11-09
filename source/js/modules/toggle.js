@@ -1,6 +1,6 @@
 document.querySelectorAll('[data-toggle]').forEach((toggle) => {
-  let aboutText = toggle.querySelector('[data-toggle-text]');
-  let aboutButton = toggle.querySelector('[data-toggle-btn]');
+  const aboutText = toggle.querySelector('[data-toggle-text]');
+  const aboutButton = toggle.querySelector('[data-toggle-btn]');
 
 
   aboutButton.addEventListener('click', (event)=> {

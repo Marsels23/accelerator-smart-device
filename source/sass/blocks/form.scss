@@ -173,20 +173,6 @@
   input {
     display: none;
 
-    & + label + .form__text-error {
-      display: none;
-    }
-
-    &.form__input--error + label {
-      & + .form__text-error {
-        position: absolute;
-        display: flex;
-        top: -20px;
-        left: 0;
-        font-size: 14px;
-        color: $color-torch-red;
-      }
-    }
 
     &:checked + label {
       &::before {
