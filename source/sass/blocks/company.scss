@@ -2,7 +2,10 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 100px;
-
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 
   @include vp-1023 {
     padding-bottom: 80px;
@@ -76,13 +79,6 @@
   }
 }
 
-.company__container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-}
 
 .company__btn {
   margin-top: 15px;
