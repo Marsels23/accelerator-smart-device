@@ -698,7 +698,6 @@ body {
   font-size: 16px;
   line-height: 19px;
   padding: 15px 25px;
-  min-width: 265px;
 }
 
 .btn--blue {
@@ -893,9 +892,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   row-gap: 20px;
@@ -1364,6 +1363,7 @@ body {
   min-width: 150px;
   min-height: 320px;
   margin-right: 100px;
+  margin-top: 50px;
 }
 
 .company h2 {
@@ -1386,7 +1386,7 @@ body {
 }
 
 .company__block {
-  margin-top: 4px;
+  margin-top: 58px;
 }
 
 .company__btn {
@@ -1858,7 +1858,8 @@ body {
 
 @media (max-width: 1023px) {
   .container {
-    padding: 80px 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .btn {
@@ -1868,7 +1869,11 @@ body {
 
   .btn--black {
     font-size: 16px;
-    padding: 10px 25px;
+    padding: 25px;
+    max-width: 265px;
+    min-width: 265px;
+    padding-top: 16px;
+    padding-bottom: 14px;
   }
 
   .btn--blue {
@@ -1882,9 +1887,14 @@ body {
     position: absolute;
   }
 
+  .header__container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .header__contacts {
-    width: 100px;
     height: 40px;
+    width: 350px;
     margin-bottom: 15px;
     margin-right: 13px;
     margin-top: 0;
@@ -1935,8 +1945,13 @@ body {
     margin-bottom: 58px;
   }
 
+  .banner__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .banner__block {
-    padding: 180px 0 205px;
+    padding: 100px 0 125px;
   }
 
   .banner__btn {
@@ -2013,6 +2028,7 @@ body {
 
   .company picture {
     margin-right: 25px;
+    margin-top: 0;
   }
 
   .company p {
@@ -2190,7 +2206,7 @@ body {
   .btn--black {
     font-size: 16px;
     line-height: 19px;
-    min-width: 270px;
+    width: 100%;
     padding: 13px 25px;
   }
 
@@ -2218,10 +2234,16 @@ body {
     padding: 15px 0 20px;
   }
 
+  .header__container {
+    padding-left: 26px;
+    padding-right: 35px;
+  }
+
   .header__contacts {
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-right: 0;
     margin-top: -5px;
+    width: 200px;
   }
 
   .header__link svg {
@@ -2354,7 +2376,7 @@ body {
   }
 
   .footer__section--open h3 {
-    padding: 19px 0 15px;
+    padding: 22px 0 15px;
     margin: 0;
   }
 
@@ -2435,7 +2457,7 @@ body {
     font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
     font-size: 28px;
     line-height: 43px;
-    margin: 0 0 10px 0;
+    margin: -4px 0 10px 0;
   }
 
   .company p {

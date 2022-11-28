@@ -99,11 +99,18 @@
   }
 }
 
+.banner__container {
+  @include vp-1023 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
 .banner__block {
   padding: 305px 0 280px 125px;
 
   @include vp-1023 {
-    padding: 180px 0 205px;
+    padding: 100px 0 125px;
   }
 
   @include vp-767 {
