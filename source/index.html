@@ -220,7 +220,7 @@
           <div class="feedback__block">
             <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
-            <form action="https://echo.htmlacademy.ru" method="post" class="feedback__form form" data-form>
+            <form action="https://echo.htmlacademy.ru" method="post" class="feedback__form form">
               <div class="form__name-phone">
                 <div class="form__name">
                   <label class="visually-hidden" for="name">Имя</label>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="form__phone">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input name="phone" required type="text" id="phone" data-input-phone placeholder="Телефон">
+                  <input name="phone" type="text" id="phone" data-input-phone placeholder="Телефон" required>
 
                 </div>
               </div>
@@ -238,7 +238,7 @@
                 placeholder="Ваш запрос"></textarea>
               <div class="form__send-block">
                 <div class="form__personal">
-                  <input type="checkbox" name="personal" id="personal" data-input-checkbox>
+                  <input class="visually-hidden" type="checkbox" name="personal" id="personal" required>
                   <label for="personal" tabindex="0">Я согласен на обработку персональных данных</label>
 
                 </div>

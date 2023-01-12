@@ -1775,10 +1775,6 @@ body {
   opacity: 1;
 }
 
-.form__personal input {
-  display: none;
-}
-
 .form__personal input:checked + label::before {
   border-color: #ffffff;
   background-position: center center;
